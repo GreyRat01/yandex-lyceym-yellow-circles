@@ -4,12 +4,12 @@ from PyQt5.QtWidgets import QPushButton
 from PyQt5.QtGui import QPainter, QColor, QPolygon
 import sys
 import random
-from UI import Ui_MainWindow
+from circles import circles_MainWindow
 
 SCREEN_SIZE = [680, 480]
 
 
-class Example(QMainWindow, Ui_MainWindow):
+class Example(QMainWindow, circles_MainWindow):
     def __init__(self):
         super().__init__()
         self.setupUi(self)
